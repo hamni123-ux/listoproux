@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>A. Hameed — Product Listing Specialist</title>
+<style>
+  :root {
+    --bg:'#031024';
+    --accent:#60a5fa;
+    --muted:#bcd6f8;
+    --card-bg: rgba(255,255,255,0.02);
+  }
+  html,body{height:100%;margin:0;background:#031024;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;color:#e6f0ff}
+  .hero{min-height:72vh;display:flex;align-items:center;justify-content:center;
+    background-image: url('bg.svg'); background-size:cover; background-position:center; background-attachment:fixed; position:relative;}
+  .hero::after{content:'';position:absolute;inset:0;background:rgba(2,6,23,0.55);backdrop-filter: blur(4px);}
+  .overlay{position:relative;z-index:2;display:flex;gap:28px;align-items:center;padding:36px;border-radius:14px;max-width:1100px;width:92%;box-shadow:0 20px 60px rgba(3,8,20,0.7);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+  .left{flex:1}
+  .right{width:200px;flex:0 0 200px;display:flex;align-items:center;justify-content:center}
+  .photo{width:170px;height:170px;border-radius:12px;object-fit:cover;border:3px solid rgba(255,255,255,0.06);box-shadow:0 12px 32px rgba(2,6,23,0.6)}
+  h1{margin:0;font-size:30px;color:#eaf5ff}
+  .desc{color:var(--muted);margin-top:10px;max-width:760px;line-height:1.6}
+  .typewrap{display:inline-block;color:#cfe8ff;font-weight:700;font-size:18px}
+  .cursor{display:inline-block;width:2px;height:1.18em;background:var(--accent);margin-left:8px;vertical-align:middle;animation:blink 1s infinite}
+  @keyframes blink{0%,50%{opacity:1}50.1%,100%{opacity:0}}
+  .buttons{margin-top:16px;display:flex;gap:12px;align-items:center}
+  .btn{padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600;display:inline-block}
+  .email{background:#062e54;color:#dbeafe;border:1px solid rgba(255,255,255,0.04)}
+  .wa{background:#16a34a;color:#fff;font-weight:700}
+  .section{max-width:1100px;margin:36px auto;padding:18px}
+  .card{background:var(--card-bg);border:1px solid rgba(255,255,255,0.03);padding:16px;border-radius:12px}
+  footer{text-align:center;color:#9fb0d9;padding:26px 12px}
+  /* fullscreen helper */
+  #fsNotice{display:none;position:fixed;left:12px;bottom:12px;background:rgba(0,0,0,0.5);color:#fff;padding:10px 14px;border-radius:10px;font-size:13px}
+  @media (max-width:880px){.overlay{flex-direction:column;align-items:center}.right{width:140px}.photo{width:120px;height:120px}}
+</style>
+</head>
+<body>
+  <div id="fsNotice">If the page did not enter fullscreen automatically, click <button id="enterFs" style="margin-left:8px;padding:6px 8px;border-radius:8px;background:var(--accent);border:none;color:#031024;cursor:pointer">Enter Fullscreen</button></div>
+
+  <section class="hero" id="hero">
+    <div class="overlay" role="region" aria-label="Hero">
+      <div class="left">
+        <h1>A. Hameed</h1>
+        <div style="margin-top:10px;">
+          <span class="typewrap" id="typed"></span><span class="cursor"></span>
+        </div>
+        <p class="desc">Experienced Product Uploading & Data Entry Specialist — I help global eCommerce stores manage listings, uploads, and inventory with accuracy and speed.</p>
+        <div class="buttons">
+          <a class="btn email" href="mailto:abdulhameedrahimoon46@outlook.com">Email Me</a>
+          <a class="btn wa" href="https://wa.me/923458289378" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="profile.jpg" alt="A. Hameed" class="photo" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle" style="color:#90caf9;font-size:20px;font-weight:700;margin:0">About Me</h2>
+    <div style="margin-top:10px;color:#cfe8ff;line-height:1.6">Hi! I'm <strong>A. Hameed</strong>, a Product Uploading & Data Entry Specialist with over <strong>5 years</strong> of experience working with global eCommerce stores and local brands. I specialize in Shopify, WooCommerce, Amazon, and eBay listings, bulk CSV uploads, image editing for listings, and inventory management.</div>
+  </section>
+
+  <section class="section" aria-labelledby="servicesTitle">
+    <h3 id="servicesTitle" style="color:#90caf9;font-weight:700;margin:0">Services</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px">
+      <div class="card"><strong>Product Uploading</strong><div style="color:#bcd6f8;font-size:13px;margin-top:6px">Shopify, WooCommerce, Amazon, eBay — SEO titles, descriptions, images & variants.</div></div>
+      <div class="card"><strong>Data Entry</strong><div style="color:#bcd6f8;font-size:13px;margin-top:6px">Accurate CSV & Excel work, bulk uploads, and product attribute mapping.</div></div>
+      <div class="card"><strong>Inventory Updates</strong><div style="color:#bcd6f8;font-size:13px;margin-top:6px">Stock sync, threshold alerts, and daily/weekly reconciliation.</div></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="portfolioTitle">
+    <h3 id="portfolioTitle" style="color:#90caf9;font-weight:700;margin:0">Portfolio Highlights</h3>
+    <ul style="color:#cfe8ff;margin-top:10px;line-height:1.6">
+      <li>Managed product listings for UK-based fashion and electronics stores</li>
+      <li>Uploaded and optimized 500+ products for Shopify and WooCommerce</li>
+      <li>Maintained accurate inventory reports for multi-seller marketplaces</li>
+    </ul>
+  </section>
+
+  <footer>© 2025 A. Hameed — Product Uploading & Data Entry Specialist • abdulhameedrahimoon46@outlook.com • +92 345 8289378</footer>
+
+<script>
+  // Typing animation (delete then type next), runs once
+  const phrases = [
+    'Product Listing Expert',
+    'E-Commerce Specialist',
+    'SEO Optimizer',
+    'Digital Catalog Manager'
+  ];
+  const typedEl = document.getElementById('typed');
+  const typingSpeed = 60;
+  const erasingSpeed = 35;
+  const pauseBetween = 900;
+  let pIndex = 0, cIndex = 0, deleting = false;
+
+  function typeOnce() {
+    if (pIndex >= phrases.length) return;
+    const current = phrases[pIndex];
+    if (!deleting) {
+      typedEl.textContent = current.slice(0, cIndex + 1);
+      cIndex++;
+      if (cIndex === current.length) {
+        setTimeout(()=>{ deleting = true; typeOnce(); }, pauseBetween);
+      } else setTimeout(typeOnce, typingSpeed);
+    } else {
+      typedEl.textContent = current.slice(0, cIndex - 1);
+      cIndex--;
+      if (cIndex === 0) { deleting = false; pIndex++; if (pIndex < phrases.length) setTimeout(typeOnce, 300); else return; }
+      else setTimeout(typeOnce, erasingSpeed);
+    }
+  }
+
+  // try request fullscreen once on load (may be blocked by browser policies)
+  function tryFullscreen() {
+    const el = document.documentElement;
+    if (el.requestFullscreen) {
+      el.requestFullscreen().catch(()=>{ document.getElementById('fsNotice').style.display='block'; });
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    } else {
+      document.getElementById('fsNotice').style.display='block';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', ()=> {
+    // start typing animation
+    typeOnce();
+    // attempt fullscreen after small delay
+    setTimeout(tryFullscreen, 600);
+    // provide manual button if automatic fullscreen blocked
+    document.getElementById('enterFs').addEventListener('click', tryFullscreen);
+  });
+</script>
+</body>
+</html>
